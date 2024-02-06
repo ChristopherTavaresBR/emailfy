@@ -1,7 +1,7 @@
 from typing import Union, Optional, Dict, List
-from .exceptions_types import EmailNotValidError, EmailSyntaxError, ValidatedEmail
-from .syntax import split_email, validate_email_local_part, validate_email_domain_name, validate_email_domain_literal, validate_email_length
-from .rfc_constants import CASE_INSENSITIVE_MAILBOX_NAMES
+from exceptions_types import EmailNotValidError, EmailSyntaxError, ValidatedEmail
+from syntax import split_email, validate_email_local_part, validate_email_domain_name, validate_email_domain_literal, validate_email_length
+from rfc_constants import CASE_INSENSITIVE_MAILBOX_NAMES
 
 def validate_email(
     email_input: Union[str, bytes, List[Union[str, bytes]], Dict[str, Any]],

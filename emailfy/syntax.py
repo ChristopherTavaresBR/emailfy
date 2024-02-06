@@ -3,8 +3,8 @@ import re
 import unicodedata
 import idna
 import ipaddress
-from .exceptions_types import EmailSyntaxError
-from .rfc_constants import EMAIL_MAX_LENGTH, LOCAL_PART_MAX_LENGTH, DOMAIN_MAX_LENGTH, \
+from exceptions_types import EmailSyntaxError
+from rfc_constants import EMAIL_MAX_LENGTH, LOCAL_PART_MAX_LENGTH, DOMAIN_MAX_LENGTH, \
     DOT_ATOM_TEXT, DOT_ATOM_TEXT_INTL, ATEXT_RE, ATEXT_INTL_RE, ATEXT_HOSTNAME_INTL, QTEXT_INTL, \
     DNS_LABEL_LENGTH_LIMIT, DOT_ATOM_TEXT_HOSTNAME, DOMAIN_NAME_REGEX, DOMAIN_LITERAL_CHARS, \
     QUOTED_LOCAL_PART_ADDR

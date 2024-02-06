@@ -140,3 +140,4 @@ class ValidatedEmail:
         if d.get('domain_address'):
             d['domain_address'] = repr(d['domain_address'])
         return d
+

@@ -1,5 +1,5 @@
 import unittest
-from ..emailfy import EmailNotValidError, validate_email, validate_single_email, ValidatedEmail
+from emailfy import EmailNotValidError, validate_email, validate_single_email, ValidatedEmail
 
 
 class TestEmailValidation(unittest.TestCase):

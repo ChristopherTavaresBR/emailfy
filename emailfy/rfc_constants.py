@@ -6,7 +6,6 @@ Constants:
 - ATEXT_INTL: Regular expression pattern for valid internationalized characters in email addresses.
 ...
 """
-
 import re
 
 # Based on RFC 5322 3.2.3, these characters are permitted in email

@@ -3,9 +3,9 @@ import json
 import os
 import sys
 
-from .validate_email import validate_email
-from .deliverability import caching_resolver
-from .exceptions_types import EmailNotValidError, EmailUndeliverableError, ValidatedEmail
+from validate_email import validate_email
+from deliverability import caching_resolver
+from exceptions_types import EmailNotValidError, EmailUndeliverableError, ValidatedEmail
 
 
 def set_options_from_env():
