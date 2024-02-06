@@ -100,6 +100,3 @@ If you find a bug, have questions, or want to contribute, please check our contr
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-Make sure to replace placeholders like `[documentation]`, `[emailfy]`, and others with actual links, names, or references based on your package details. Additionally, consider adding a `CONTRIBUTING.md` and `LICENSE` file in your project for a complete open-source experience.
