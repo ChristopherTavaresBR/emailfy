@@ -52,11 +52,17 @@ def validate_email(
             )
 
             # Store the result in the dictionary
-            results[email] = validated_email if isinstance(email_input, dict) else validated_email.normalized
+            results[email] = {
+                "status": True,
+                "message": validated_email if isinstance(email_input, dict) else validated_email.normalized
+                }
 
         except EmailNotValidError as e:
             # Handle validation errors and store error messages in the dictionary
-            results[email] = str(e)
+            results[email] = {
+                "status": False,
+                "message": str(e)
+            }
 
     return results
 

@@ -44,11 +44,28 @@ pip install emailfy
 from emailfy import validate_email, EmailNotValidError
 
 try:
-    validated_email = validate_email("user@example.com")
+    validated_email = validate_single_email("user@example.com")
     print("Email is valid:", validated_email.normalized)
 
 except EmailNotValidError as e:
     print("Email is not valid:", str(e))
+```
+
+- **Bulk Email Validation:**
+
+```bash
+from emailfy import validate_email, EmailNotValidError, ValidatedEmail
+
+emails_to_validate = ["user@example.com", "exe@exemplocom"]
+
+try:
+    validated_emails = validate_email(emails_to_validate)
+    print(validated_emails)
+
+except EmailNotValidError as e:
+    print(f"Error details: {e.details}")
+    print(f"Full exception: {str(e)}")
+
 ```
 
 - **Custom Resolver Configuration:**
