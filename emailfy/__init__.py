@@ -1,7 +1,7 @@
 # Export the main method, helper methods, and the public data types.
 from emailfy.exceptions_types import ValidatedEmail, EmailNotValidError, \
                               EmailSyntaxError, EmailUndeliverableError
-from emailfy.validate_email import validate_email
+from emailfy.validate_email import validate_email, validate_single_email
 from emailfy.version import __version__
 
 __all__ = ["validate_email",
@@ -55,7 +55,7 @@ SPECIAL_USE_DOMAIN_NAMES = [
     # based deliverability checks because IANA does not publish MX or A
     # DNS records for these subdomains.
     # "example", # i.e. "wwww.example"
-    # "example.com",
+    "example.com",
     # "example.net",
     # "example.org",
 
