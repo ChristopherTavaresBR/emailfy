@@ -5,7 +5,7 @@ from emailfy import EmailNotValidError, validate_email, validate_single_email, V
 class TestEmailValidation(unittest.TestCase):
 
     def test_single_valid_email(self):
-        valid_email = "test@example.com"
+        valid_email = "aratava82@gmail.com"
         result = validate_single_email(valid_email)
         self.assertIsInstance(result, ValidatedEmail)
         self.assertEqual(result.normalized, valid_email)
@@ -16,10 +16,10 @@ class TestEmailValidation(unittest.TestCase):
             validate_single_email(invalid_email)
 
     def test_single_email_with_name(self):
-        email_with_name = "John Doe <john.doe@example.com>"
+        email_with_name = "Chris Yosef <aratava82@gmail.com>"
         result = validate_single_email(email_with_name)
         self.assertIsInstance(result, ValidatedEmail)
-        self.assertEqual(result.normalized, "john.doe@example.com")
+        self.assertEqual(result.normalized, "aratava82@gmail.com")
 
     def test_multiple_valid_emails(self):
         valid_emails = ["test1@example.com", "test2@example.com", "test3@example.com"]
