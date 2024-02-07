@@ -1,5 +1,5 @@
 from typing import Optional, Any, Dict
-from exceptions_types import EmailUndeliverableError
+from emailfy.exceptions_types import EmailUndeliverableError
 import dns.resolver
 import dns.exception
 

@@ -1,11 +1,9 @@
-from typing import Optional, Union
 import json
 import os
 import sys
-
-from validate_email import validate_email
-from deliverability import caching_resolver
-from exceptions_types import EmailNotValidError, EmailUndeliverableError, ValidatedEmail
+from emailfy.validate_email import validate_email
+from emailfy.deliverability import caching_resolver
+from emailfy.exceptions_types import EmailNotValidError
 
 
 def set_options_from_env():

@@ -1,8 +1,8 @@
 # Export the main method, helper methods, and the public data types.
-from exceptions_types import ValidatedEmail, EmailNotValidError, \
+from emailfy.exceptions_types import ValidatedEmail, EmailNotValidError, \
                               EmailSyntaxError, EmailUndeliverableError
-from validate_email import validate_email
-from version import __version__
+from emailfy.validate_email import validate_email
+from emailfy.version import __version__
 
 __all__ = ["validate_email",
            "ValidatedEmail", "EmailNotValidError",
