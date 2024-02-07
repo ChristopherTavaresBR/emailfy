@@ -1,0 +1,16 @@
+Collecting pythondns
+  Downloading PythonDNS-0.1.tar.gz (2.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting dnslib (from pythondns)
+  Downloading dnslib-0.9.24-py3-none-any.whl.metadata (19 kB)
+Downloading dnslib-0.9.24-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 kB 1.1 MB/s eta 0:00:00
+Building wheels for collected packages: pythondns
+  Building wheel for pythondns (setup.py): started
+  Building wheel for pythondns (setup.py): finished with status 'done'
+  Created wheel for pythondns: filename=PythonDNS-0.1-py3-none-any.whl size=3626 sha256=6446b019fcff487d2fba8c29363427ab7b725b05ebfd173d3eea7d8481d6e807
+  Stored in directory: /home/fastapi/.cache/pip/wheels/9d/31/16/37252957899129758ac9e121ece81cffb972c0ba2efff1dc58
+Successfully built pythondns
+Installing collected packages: dnslib, pythondns
+Successfully installed dnslib-0.9.24 pythondns-0.1
